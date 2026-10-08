@@ -9,10 +9,10 @@ Dự án điều khiển 2 đèn LED (LED tích hợp và LED ngoài) thông qua
 | STT | Tên linh kiện | Số lượng | Ghi chú |
 | :-: | :--- | :-: | :--- |
 | 1 | ESP32 Devkit V1 | 01 | Vi điều khiển trung tâm |
-| 2 | LED 1 (Built-in) | 01 | Đèn LED xanh lam tích hợp trên board |
-| 3 | LED 2 (External) | 01 | Mắc nối tiếp trở 1K về chân GND |
-| 4 | Điện trở vạch 1K 1/4W | 01 | Hạn dòng bảo vệ LED 2 |
-| 5 | Nút nhấn 4 chân | 01 | Nối về GND (kích hoạt Internal Pull-up) |
+| 2 | LED 1 (Built-in) | 01 | Đèn LED xanh lam tích hợp sẵn nội vi trên chân GPIO 2 của mạch |
+| 3 | LED 2 (External) | 01 | Cực dương (Anode - chân dài) nối vào GPIO 18, cực âm (Cathode - chân ngắn) nối qua trở 1K về GND |
+| 4 | Điện trở vạch 1K 1/4W | 01 | Mắc nối tiếp giữa chân âm của LED 2 và chân GND của ESP32 để hạn dòng bảo vệ LED |
+| 5 | Nút nhấn 4 chân | 01 | Một chân cắm vào GPIO 19, chân đối diện nối về GND |
 | 6 | Breadboard & Dây nối | 01 | Cắm mạch thử nghiệm |
 
 ---
