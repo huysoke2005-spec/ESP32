@@ -22,4 +22,4 @@ Dự án điều khiển 2 đèn LED (LED tích hợp và LED ngoài) thông qua
 * **Double Click (Nhấn đúp 2 lần):** Chuyển đổi đối tượng điều khiển giữa LED 1 (GPIO 2) và LED 2 (GPIO 18).
 * **Single Click (Nhấn 1 lần):** Bật / Tắt  LED đang được chọn. Nếu LED đang nhấp nháy, nhấn 1 lần sẽ dừng nháy và tắt hẳn LED.
 * **Long Press (Nhấn giữ > 800ms):** Bật / Tắt chế độ nhấp nháy liên tục 200ms cho LED đang được chọn.
-* **Non-blocking Execution:** Áp dụng kỹ thuật đếm thời gian bằng hàm `millis()`, đảm bảo hiệu ứng nháy không làm nghẽn vòng lặp và chức năng quét phím `btn.tick()` luôn phản hồi tức thì.
+* **Xử lý không gây nghẽn:** Áp dụng kỹ thuật đếm thời gian bằng hàm `millis()`, đảm bảo hiệu ứng nháy không làm nghẽn vòng lặp và chức năng quét phím `btn.tick()` luôn phản hồi tức thì.
